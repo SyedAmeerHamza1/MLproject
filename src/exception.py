@@ -20,11 +20,4 @@ class CustomException(Exception):
         return self.error_msg
     
 
-
-if __name__ == "__main__":
-    try:
-        a=10/0
-    except Exception as e:
-        logging.error(e)
-        raise CustomException(e, sys)
         
