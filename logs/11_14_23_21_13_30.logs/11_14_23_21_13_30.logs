@@ -1,0 +1,35 @@
+[2023-11-14 21:13:34,814], 96, werkzeug, INFO, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.93.221:5000
+[2023-11-14 21:13:34,814], 96, werkzeug, INFO, [33mPress CTRL+C to quit[0m
+[2023-11-14 21:14:57,752], 96, werkzeug, INFO, 127.0.0.1 - - [14/Nov/2023 21:14:57] "GET / HTTP/1.1" 200 -
+[2023-11-14 21:14:57,882], 96, werkzeug, INFO, 127.0.0.1 - - [14/Nov/2023 21:14:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-11-14 21:15:23,122], 825, application, ERROR, Exception on / [POST]
+Traceback (most recent call last):
+  File "D:\Projects\MLproject\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Projects\MLproject\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Projects\MLproject\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Projects\MLproject\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 27, in predict_datapoint
+    pred_df= data.get_data_as_data_from()
+AttributeError: 'CustomData' object has no attribute 'get_data_as_data_from'
+[2023-11-14 21:15:23,132], 96, werkzeug, INFO, 127.0.0.1 - - [14/Nov/2023 21:15:23] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2023-11-14 21:15:40,718], 825, application, ERROR, Exception on / [POST]
+Traceback (most recent call last):
+  File "D:\Projects\MLproject\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Projects\MLproject\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Projects\MLproject\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Projects\MLproject\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "application.py", line 27, in predict_datapoint
+    pred_df= data.get_data_as_data_from()
+AttributeError: 'CustomData' object has no attribute 'get_data_as_data_from'
+[2023-11-14 21:15:40,720], 96, werkzeug, INFO, 127.0.0.1 - - [14/Nov/2023 21:15:40] "[35m[1mPOST / HTTP/1.1[0m" 500 -

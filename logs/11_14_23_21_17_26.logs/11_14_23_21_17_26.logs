@@ -1,0 +1,10 @@
+[2023-11-14 21:17:28,234], 96, werkzeug, INFO, [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.93.221:5000
+[2023-11-14 21:17:28,234], 96, werkzeug, INFO, [33mPress CTRL+C to quit[0m
+[2023-11-14 21:17:34,229], 96, werkzeug, INFO, 127.0.0.1 - - [14/Nov/2023 21:17:34] "GET / HTTP/1.1" 200 -
+[2023-11-14 21:17:49,915], 96, werkzeug, INFO, 127.0.0.1 - - [14/Nov/2023 21:17:49] "POST / HTTP/1.1" 200 -
+[2023-11-14 21:18:32,594], 96, werkzeug, INFO, 127.0.0.1 - - [14/Nov/2023 21:18:32] "POST / HTTP/1.1" 200 -
+[2023-11-14 21:18:35,814], 96, werkzeug, INFO, 127.0.0.1 - - [14/Nov/2023 21:18:35] "POST / HTTP/1.1" 200 -
+[2023-11-14 21:18:38,835], 96, werkzeug, INFO, 127.0.0.1 - - [14/Nov/2023 21:18:38] "POST / HTTP/1.1" 200 -
